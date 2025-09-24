@@ -398,7 +398,7 @@ const LoggedInOwner = () => {
             <div className="footer-section">
               <h5>Contact</h5>
               <p>support@leasepro.com</p>
-              <p>+234 800 000 0000</p>
+              <p>08101523947</p>
             </div>
           </div>
           <div className="footer-bottom">
