@@ -26,7 +26,7 @@ const SignUp = () => {
     'Jamaare', 'Katagum', 'Itas/Gadau', 'Zaki', 'Dambam', 'Gamawa'
   ];
 
-  const roleOptions = ['admin', 'owner', 'leaser'];
+  const roleOptions = [ 'owner', 'leaser'];
 
   // Console log form data whenever it changes
   React.useEffect(() => {
