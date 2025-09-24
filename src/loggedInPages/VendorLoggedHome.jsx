@@ -70,7 +70,7 @@ const LoggedInOwner = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
     console.log('🚪 User logged out, localStorage cleared');
-    window.location.href = '/signIn';
+    window.location.href = '/';
   };
    const handleLogIn = () => {
   
