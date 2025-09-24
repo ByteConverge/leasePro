@@ -1,0 +1,136 @@
+
+
+.faqHero {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  
+    margin-bottom: 20vh;
+  }
+  
+  .faqContainer {
+    min-height: 120vh;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+  
+  }
+  
+  .columns {
+      
+      /* column-count: 2;
+      margin-top: 3rem;
+      margin-bottom: 4rem; */
+      display: grid;
+      grid-template-columns: 44% 50%;
+      justify-content: space-between;
+      column-gap: 3rem;
+     
+    
+  }
+  
+  /* Header Style */
+  .h--visit--text {
+      font-weight: 500;
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+  }
+  
+  .help-header-text {
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 650;
+    margin-bottom: 20px;
+  }
+  
+  /* Question and Answer Styles */
+  .qna {
+    margin-bottom:3.5rem;
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  
+  .qna p {
+    /* margin: 10px 0; */
+    text-align: left;
+  }
+  
+ 
+  .contact-info {
+    font-style: italic;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    width: 50%;
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width:768px) {
+    .faqHero {
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20vh;
+    }
+    
+    .faqContainer {
+      min-height: 120vh;
+      padding: 20px;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 15%;
+    
+    }
+    
+    .columns {
+        
+        display: grid;
+        grid-template-columns: 100%;
+        text-align:center ;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0rem;
+      
+    }
+    
+    /* Header Style */
+    .h--visit--text {
+        font-weight: 500;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    
+    .help-header-text {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    
+    /* Question and Answer Styles */
+    .qna {
+      margin-bottom:1rem;
+      width: 100%;
+      font-size: 1.4rem;
+    }
+    
+    .qna p {
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+    
+   
+    .contact-info {
+      font-style: italic;
+      /* margin-top: 20px; */
+      /* margin-bottom: 20px; */
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+  }
+  
