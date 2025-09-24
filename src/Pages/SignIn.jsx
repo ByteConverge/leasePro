@@ -10,6 +10,7 @@ const SignIn = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+   const [showPassword, setShowPassword] = useState(false);
 
   // Console log form data whenever it changes
   React.useEffect(() => {
@@ -59,6 +60,9 @@ const SignIn = () => {
         [name]: ''
       }));
     }
+  };
+   const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   const handleSubmit = async (e) => {
@@ -212,16 +216,24 @@ const SignIn = () => {
           {/* Password Field */}
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              className={errors.password ? 'error' : ''}
-              placeholder="Enter your password"
-            />
+         <div className="password-input-container">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className={errors.password ? 'error' : ''}
+                placeholder="Enter your password"
+              />
+              <span 
+                className="password-toggle"
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? "Hide password" : "Show password"}
+              </span>
+            </div>
             {errors.password && <span className="error-message">{errors.password}</span>}
           </div>
 
