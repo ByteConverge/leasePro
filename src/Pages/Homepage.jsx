@@ -104,15 +104,15 @@ const HomePage = () => {
             <div className="hero-stats">
               <div className="stat-item">
                 <span className="stat-number"></span>
-                <span className="stat-label">Available Listings</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">3</span>
-                <span className="stat-label">Equipment Items</span>
+                <span className="stat-label"></span>
               </div>
               <div className="stat-item">
                 <span className="stat-number"></span>
-                <span className="stat-label">Potential Savings</span>
+                <span className="stat-label"></span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number"></span>
+                <span className="stat-label"></span>
               </div>
             </div>
           </div>

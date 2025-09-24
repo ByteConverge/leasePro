@@ -233,7 +233,7 @@ const LoggedInOwner = () => {
               <div className="stat-item">
                 <span className="stat-number">{isLeaser ? '' : ''}</span>
                 <span className="stat-label">
-                  {isLeaser ? 'Equipment Items' : (userData?.role === '' ? '' : 'Properties')}
+                  {isLeaser ? '' : (userData?.role === '' ? '' : '')}
                 </span>
               </div>
               <div className="stat-item">
