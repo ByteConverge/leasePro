@@ -225,21 +225,21 @@ const LoggedInOwner = () => {
             </p>
             <div className="hero-stats">
               <div className="stat-item">
-                <span className="stat-number">{isLeaser ? '50+' : '12'}</span>
+                <span className="stat-number">{isLeaser ? '' : ''}</span>
                 <span className="stat-label">
-                  {isLeaser ? 'Available Listings' : 'Active Listings'}
+                  {isLeaser ? '' : ''}
                 </span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">{isLeaser ? '30+' : '8'}</span>
+                <span className="stat-number">{isLeaser ? '' : ''}</span>
                 <span className="stat-label">
-                  {isLeaser ? 'Equipment Items' : (userData?.role === 'leaser' ? 'Active Leases' : 'Properties')}
+                  {isLeaser ? 'Equipment Items' : (userData?.role === '' ? '' : 'Properties')}
                 </span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">₦{isLeaser ? '1.2M' : '2.4M'}</span>
+                <span className="stat-number">{isLeaser ? '' : ''}</span>
                 <span className="stat-label">
-                  {isLeaser ? 'Saved' : 'Total Revenue'}
+                  {isLeaser ? '' : ''}
                 </span>
               </div>
             </div>

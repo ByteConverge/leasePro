@@ -103,15 +103,15 @@ const HomePage = () => {
             </p>
             <div className="hero-stats">
               <div className="stat-item">
-                <span className="stat-number">50+</span>
+                <span className="stat-number"></span>
                 <span className="stat-label">Available Listings</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">30+</span>
+                <span className="stat-number">3</span>
                 <span className="stat-label">Equipment Items</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">₦1.2M</span>
+                <span className="stat-number"></span>
                 <span className="stat-label">Potential Savings</span>
               </div>
             </div>
